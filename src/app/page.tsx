@@ -9,7 +9,7 @@ import MaterialSymbolsHandshake from "./icons/MaterialSymbolsHandshake";
 import MaterialSymbolsArrowDownward from "./icons/MaterialSymbolsArrowDownward";
 import PrimaryButton from "./components/PrimaryButton";
 import InputBox from "./components/InputBox";
-import NavBar from "./components/navBar";
+import NavBar from "./components/NavBar";
 
 interface navItem {
   title: string;

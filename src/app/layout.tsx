@@ -8,7 +8,7 @@ import LogosSpotifyIcon from "./icons/LogosSpotifyIcon";
 import LogosTwitter from "./icons/LogosTwitter";
 import LogosYoutubeIcon from "./icons/LogosYoutubeIcon";
 import Image from "next/image";
-import NavBar from "./components/navBar";
+import NavBar from "./components/NavBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
