@@ -15,7 +15,7 @@ const config: Config = {
         logoGreen: '#247424',
         logoYellow: '#FFDE59',
         darkGreen: '#1D331D',
-        lightGreen: '#C4F2C4'
+        lightGreen: '#C4DBC0'
       }
     },
   },

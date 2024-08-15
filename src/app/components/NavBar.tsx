@@ -17,15 +17,15 @@ const NavBar = () => {
   const navBar: navItem[] = [
     {
       title: "How It Works",
-      url: "/",
+      url: "/how-it-works",
     },
     {
       title: "Sell House Fast",
-      url: "/",
+      url: "/sell-house-fast",
     },
     {
       title: "Selling Guides",
-      url: "/",
+      url: "/selling-guides",
     },
     {
       title: "FAQs",

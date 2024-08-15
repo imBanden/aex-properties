@@ -7,7 +7,7 @@ interface FAQsContainer {
 
 const FAQsContainer = ({ children, title }: FAQsContainer) => {
   return (
-    <div className="flex items-center gap-16 border-t-darkGreen border-t-2 p-8">
+    <div className="flex gap-24 border-t-darkGreen border-t-2 p-16">
       <p className="flex flex-1 font-satoshi font-bold text-darkGreen text-3xl">
         {title}
       </p>

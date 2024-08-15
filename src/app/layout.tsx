@@ -85,7 +85,7 @@ export default function RootLayout({
                   <div className="flex flex-col gap-3 w-full">
                     {sellHouseFooter.map((items, index) => (
                       <div
-                        className="cursor-pointer font text-darkGreen hover:bg-green-400 transition-all text-sm"
+                        className="cursor-pointer text-darkGreen hover:bg-green-400 transition-all text-base"
                         key={index}
                       >
                         {items}
@@ -99,7 +99,7 @@ export default function RootLayout({
                   <div className="flex flex-col gap-3 w-full">
                     {generalFooter.map((items, index) => (
                       <div
-                        className="cursor-pointer font text-darkGreen hover:bg-green-400 transition-all text-sm"
+                        className="cursor-pointer font text-darkGreen hover:bg-green-400 transition-all text-base"
                         key={index}
                       >
                         {items}
@@ -113,7 +113,7 @@ export default function RootLayout({
                   <div className="flex flex-col gap-3 w-full">
                     {offersFooter.map((items, index) => (
                       <div
-                        className="cursor-pointer font text-darkGreen hover:bg-green-400 transition-all text-sm"
+                        className="cursor-pointer font text-darkGreen hover:bg-green-400 transition-all text-base"
                         key={index}
                       >
                         {items}

@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import NavButtons from "./components/NavButtons";
-import { useRouter } from "next/navigation";
 import MaterialSymbolsEditDocument from "./icons/MaterialSymbolsEditDocument";
 import MaterialSymbolsPhoneInTalk from "./icons/MaterialSymbolsPhoneInTalk";
 import MaterialSymbolsHandshake from "./icons/MaterialSymbolsHandshake";
@@ -11,60 +10,7 @@ import PrimaryButton from "./components/PrimaryButton";
 import InputBox from "./components/InputBox";
 import NavBar from "./components/NavBar";
 
-interface navItem {
-  title: string;
-  url: string;
-}
-
 export default function Home() {
-  const router = useRouter();
-  const navBar: navItem[] = [
-    {
-      title: "How It Works",
-      url: "/",
-    },
-    {
-      title: "Sell House Fast",
-      url: "/",
-    },
-    {
-      title: "Selling Guides",
-      url: "/",
-    },
-    {
-      title: "FAQs",
-      url: "/help",
-    },
-  ];
-
-  // const sellHouseFooter = [
-  //   "We Buy Any Home",
-  //   "Sell House Fast",
-  //   "Cash House Buyers",
-  //   "Sell Flat Fast",
-  //   "Sell With Tenants",
-  //   "Sell Commercial Property",
-  // ];
-
-  // const generalFooter = [
-  //   "Our Company",
-  //   "How It Works",
-  //   "Meet the Team",
-  //   "Blog",
-  //   "Reviews",
-  //   "Contact Us",
-  //   "Privacy",
-  //   "Complaints",
-  // ];
-
-  // const offersFooter = [
-  //   "Sell House After Divorce",
-  //   "Sell Probate Property",
-  //   "Stop House Repossession",
-  //   "House Sale Fall Through",
-  //   "Moving House",
-  //   "Get A Free Cash Offer",
-  // ];
   return (
     <div className="flex flex-col">
       {/* // hero section */}
@@ -109,7 +55,7 @@ export default function Home() {
               <div className="bg-lightGreen rounded-full flex justify-center items-center w-fit p-4">
                 <MaterialSymbolsEditDocument className="text-darkGreen h-12 w-12" />
               </div>
-              <p className="text-xl">Fill in the online form</p>
+              <p className="text-xl text-darkGreen">Fill in the online form</p>
             </div>
             <MaterialSymbolsArrowDownward className="text-darkGreen h-16 w-16 -rotate-90 -z-0" />
 
@@ -117,7 +63,7 @@ export default function Home() {
               <div className="bg-lightGreen rounded-full flex justify-center items-center w-fit p-4">
                 <MaterialSymbolsPhoneInTalk className="text-darkGreen h-12 w-12" />
               </div>
-              <p className="text-xl">Receive offer</p>
+              <p className="text-xl text-darkGreen">Receive offer</p>
             </div>
 
             <MaterialSymbolsArrowDownward className="text-darkGreen h-16 w-16 -rotate-90" />
@@ -126,7 +72,7 @@ export default function Home() {
               <div className="bg-lightGreen rounded-full flex justify-center items-center w-fit p-4">
                 <MaterialSymbolsHandshake className="text-darkGreen h-12 w-12" />
               </div>
-              <p className="text-xl">Sale agreed</p>
+              <p className="text-xl text-darkGreen">Sale agreed</p>
             </div>
           </div>
         </div>
@@ -230,87 +176,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* footer */}
-      {/* <footer className="flex justify-center items-center bg-lightGreen pb-12">
-        <div className="mx-24 w-full h-full flex flex-col items-start pt-24 gap-24">
-          <div className="flex gap-12 w-full">
-            <div className="flex flex-1  flex-col text-darkGreen px-8 gap-6">
-              <p className="font-satoshi font-bold text-3xl">Socials</p>
-              <div className="flex flex-col gap-3 w-fit">
-                <IconBadge>
-                  <LogosYoutubeIcon className="text-2xl" />
-                </IconBadge>
-                <IconBadge>
-                  <LogosInstagramIcon className="text-3xl" />
-                </IconBadge>
-                <IconBadge>
-                  <LogosSpotifyIcon className="text-3xl" />
-                </IconBadge>
-                <IconBadge>
-                  <LogosLinkedinIcon className="text-3xl" />
-                </IconBadge>
-                <IconBadge>
-                  <LogosTwitter className="text-2xl" />
-                </IconBadge>
-              </div>
-            </div>
-
-            <div className="flex flex-1  flex-col text-darkGreen px-8 gap-6">
-              <p className="font-satoshi font-bold text-3xl">Sell House</p>
-              <div className="flex flex-col gap-3 w-full">
-                {sellHouseFooter.map((items, index) => (
-                  <div
-                    className="cursor-pointer font text-darkGreen hover:bg-green-400 transition-all text-sm"
-                    key={index}
-                  >
-                    {items}
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="flex flex-1  flex-col text-darkGreen px-8 gap-6">
-              <p className="font-satoshi font-bold text-3xl">General</p>
-              <div className="flex flex-col gap-3 w-full">
-                {generalFooter.map((items, index) => (
-                  <div
-                    className="cursor-pointer font text-darkGreen hover:bg-green-400 transition-all text-sm"
-                    key={index}
-                  >
-                    {items}
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="flex flex-1  flex-col text-darkGreen px-8 gap-6">
-              <p className="font-satoshi font-bold text-3xl">Offers</p>
-              <div className="flex flex-col gap-3 w-full">
-                {offersFooter.map((items, index) => (
-                  <div
-                    className="cursor-pointer font text-darkGreen hover:bg-green-400 transition-all text-sm"
-                    key={index}
-                  >
-                    {items}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <div className="flex justify-center items-center w-full">
-            <Image
-              priority={true}
-              alt="AEX Properties Logo image"
-              width={2000}
-              height={1000}
-              src={"/images/AEX PROPERTIES/footer_darkgreen.png"}
-              className="object-contain w-full h-auto"
-            />
-          </div>
-        </div>
-      </footer> */}
     </div>
   );
 }
