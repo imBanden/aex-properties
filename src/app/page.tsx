@@ -1,14 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import NavButtons from "./components/NavButtons";
-import MaterialSymbolsEditDocument from "./icons/MaterialSymbolsEditDocument";
-import MaterialSymbolsPhoneInTalk from "./icons/MaterialSymbolsPhoneInTalk";
-import MaterialSymbolsHandshake from "./icons/MaterialSymbolsHandshake";
-import MaterialSymbolsArrowDownward from "./icons/MaterialSymbolsArrowDownward";
-import PrimaryButton from "./components/PrimaryButton";
-import InputBox from "./components/InputBox";
-import NavBar from "./components/NavBar";
+import NavButtons from "../components/NavButtons";
+import MaterialSymbolsEditDocument from "../icons/MaterialSymbolsEditDocument";
+import MaterialSymbolsPhoneInTalk from "../icons/MaterialSymbolsPhoneInTalk";
+import MaterialSymbolsHandshake from "../icons/MaterialSymbolsHandshake";
+import MaterialSymbolsArrowDownward from "../icons/MaterialSymbolsArrowDownward";
+import PrimaryButton from "../components/PrimaryButton";
+import InputBox from "../components/InputBox";
+import NavBar from "../components/NavBar";
+import Banner from "../components/Banner";
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
             A guaranteed sale in a time that suits you.
           </p>
           <div className="flex gap-8 mt-12">
-            <InputBox placeholder="Enter your address..."></InputBox>
+            <InputBox placeholder="Enter your postcode..."></InputBox>
             <PrimaryButton>Sell now</PrimaryButton>
           </div>
         </div>
@@ -176,6 +177,9 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Banner */}
+      <Banner />
     </div>
   );
 }

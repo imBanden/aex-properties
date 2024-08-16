@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
-import NavBar from "../components/NavBar";
-import FAQsContainer from "../components/FAQsContainer";
+import NavBar from "../../components/NavBar";
+import FAQsContainer from "../../components/FAQsContainer";
+import Banner from "@/components/Banner";
 
 const page = () => {
   const FAQs = [
@@ -59,6 +62,7 @@ const page = () => {
           </div>
         </div>
       </div>
+      <Banner />
     </div>
   );
 };

@@ -53,7 +53,7 @@ const NavBar = () => {
         </div>
       </div>
       <div className="flex gap-8">
-        <InputBox placeholder="Enter your address..."></InputBox>
+        <InputBox placeholder="Enter your postcode..."></InputBox>
         <PrimaryButton>Sell now</PrimaryButton>
       </div>
     </div>

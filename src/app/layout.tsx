@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import IconBadge from "./components/IconBadge";
-import LogosInstagramIcon from "./icons/LogosInstagramIcon";
-import LogosLinkedinIcon from "./icons/LogosLinkedinIcon";
-import LogosSpotifyIcon from "./icons/LogosSpotifyIcon";
-import LogosTwitter from "./icons/LogosTwitter";
-import LogosYoutubeIcon from "./icons/LogosYoutubeIcon";
+import IconBadge from "../components/IconBadge";
+import LogosInstagramIcon from "../icons/LogosInstagramIcon";
+import LogosLinkedinIcon from "../icons/LogosLinkedinIcon";
+import LogosSpotifyIcon from "../icons/LogosSpotifyIcon";
+import LogosTwitter from "../icons/LogosTwitter";
+import LogosYoutubeIcon from "../icons/LogosYoutubeIcon";
 import Image from "next/image";
-import NavBar from "./components/NavBar";
+import MaterialSymbolsMail from "@/icons/MaterialSymbolsMail";
+import LogosFacebook from "@/icons/LogosFacebook";
+import MaterialSymbolsPhoneInTalk from "@/icons/MaterialSymbolsPhoneInTalk";
+import MaterialSymbolsCall from "@/icons/MaterialSymbolsCall";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -61,22 +64,42 @@ export default function RootLayout({
               <div className="flex gap-12 w-full">
                 <div className="flex flex-1  flex-col text-darkGreen px-8 gap-6">
                   <p className="font-satoshi font-bold text-3xl">Socials</p>
-                  <div className="flex flex-col gap-3 w-fit">
-                    <IconBadge>
-                      <LogosYoutubeIcon className="text-2xl" />
-                    </IconBadge>
-                    <IconBadge>
-                      <LogosInstagramIcon className="text-3xl" />
-                    </IconBadge>
-                    <IconBadge>
-                      <LogosSpotifyIcon className="text-3xl" />
-                    </IconBadge>
-                    <IconBadge>
-                      <LogosLinkedinIcon className="text-3xl" />
-                    </IconBadge>
-                    <IconBadge>
-                      <LogosTwitter className="text-2xl" />
-                    </IconBadge>
+                  <div className="flex flex-col gap-8 w-fit">
+                    <div className="flex items-center text-base text-darkGreen gap-4">
+                      <MaterialSymbolsCall className="text-3xl" />
+                      <a target="_blank" href="tel:07375297745">
+                        <p className="hover:font-bold transition-all cursor-pointer">
+                          07375297745
+                        </p>
+                      </a>
+                    </div>
+                    <div className="flex items-center text-base text-darkGreen gap-4">
+                      <MaterialSymbolsMail className="text-3xl" />
+                      <a target="_blank" href="mailto:amritasmile@gmail.com">
+                        <p className="hover:font-bold transition-all cursor-pointer">
+                          amritasmile@gmail.com
+                        </p>
+                      </a>
+                    </div>
+
+                    <div className="flex items-center gap-4">
+                      <a
+                        target="_blank"
+                        href="https://www.instagram.com/accounts/login/?hl=en"
+                      >
+                        <IconBadge>
+                          <LogosInstagramIcon className="text-3xl" />
+                        </IconBadge>
+                      </a>
+                      <a
+                        target="_blank"
+                        href="https://www.facebook.com/?locale=en_GB"
+                      >
+                        <IconBadge>
+                          <LogosFacebook className="text-4xl" />
+                        </IconBadge>
+                      </a>
+                    </div>
                   </div>
                 </div>
 
@@ -85,7 +108,7 @@ export default function RootLayout({
                   <div className="flex flex-col gap-3 w-full">
                     {sellHouseFooter.map((items, index) => (
                       <div
-                        className="cursor-pointer text-darkGreen hover:bg-green-400 transition-all text-base"
+                        className="cursor-pointer text-darkGreen hover:font-bold transition-all text-base"
                         key={index}
                       >
                         {items}
@@ -99,7 +122,7 @@ export default function RootLayout({
                   <div className="flex flex-col gap-3 w-full">
                     {generalFooter.map((items, index) => (
                       <div
-                        className="cursor-pointer font text-darkGreen hover:bg-green-400 transition-all text-base"
+                        className="cursor-pointer font text-darkGreen hover:font-bold transition-all text-base"
                         key={index}
                       >
                         {items}
@@ -113,7 +136,7 @@ export default function RootLayout({
                   <div className="flex flex-col gap-3 w-full">
                     {offersFooter.map((items, index) => (
                       <div
-                        className="cursor-pointer font text-darkGreen hover:bg-green-400 transition-all text-base"
+                        className="cursor-pointer font text-darkGreen hover:font-bold transition-all text-base"
                         key={index}
                       >
                         {items}
@@ -121,6 +144,15 @@ export default function RootLayout({
                     ))}
                   </div>
                 </div>
+              </div>
+
+              <div className="flex flex-col text-darkGreen text-sm">
+                <p>Registered company name: AEX PROPERTIES LIMITED</p>
+                <p>Registered company number: 15897278</p>
+                <p>
+                  Registered office address: 70 Leybourne Road, Uxbridge,
+                  England, UB10 9HF
+                </p>
               </div>
 
               <div className="flex justify-center items-center w-full">
