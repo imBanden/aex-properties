@@ -283,7 +283,7 @@ const EnquirePage = () => {
 
             <div className="mb-3 flex flex-col gap-2">
               <label className="font-satoshi font-bold text-lg">
-                How much do you think your property worth and what's your
+                How much do you think your property worth and what&apos;s your
                 outstanding mortgage? *
               </label>
               <textarea
