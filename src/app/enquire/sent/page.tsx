@@ -4,7 +4,7 @@ import NavBar from "@/components/NavBar";
 import React from "react";
 import { useRouter } from "next/navigation";
 
-const page = () => {
+const SentPage = () => {
   const router = useRouter();
   return (
     <div className="flex flex-col">
@@ -13,7 +13,7 @@ const page = () => {
         <div className="mx-24 w-full h-full flex flex-col items-center py-24 gap-16">
           <div className="flex flex-col w-full items-center">
             <p className="font-satoshi font-bold text-8xl text-darkGreen mb-16">
-              We'll be in touch shortly
+              We&apos;ll be in touch shortly
             </p>
             <p className="font-satoshi font-bold text-4xl text-darkGreen mb-16 text-center">
               Our agents is currently reviewing your enquire and will contact
@@ -33,4 +33,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default SentPage;

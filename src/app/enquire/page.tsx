@@ -20,7 +20,7 @@ interface FormData {
   agreeToTerms: boolean;
 }
 
-const page = () => {
+const EnquirePage = () => {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [data, setData] = useState<FormData>({
@@ -214,7 +214,7 @@ const page = () => {
 
             <div className="mb-3 flex flex-col gap-2">
               <label className="font-satoshi font-bold text-lg">
-                What's the reason for selling? *
+                What&apos;s the reason for selling? *
               </label>
               <select
                 className="border-2 border-zinc-400 rounded-lg p-2 bg-zinc-50 outline-none"
@@ -331,4 +331,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default EnquirePage;

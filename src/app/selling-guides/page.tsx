@@ -92,7 +92,7 @@ const page = () => {
               helps you stay in control and reduce stress.
             </p>
             <p>
-              Whether you're upgrading, downsizing, or seeking change, this
+              Whether you&apos;re upgrading, downsizing, or seeking change, this
               guide will help you navigate the selling journey, from initiation
               to completion. Use it to make informed decisions that can impact
               your financial outcome.
