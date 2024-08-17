@@ -4,6 +4,7 @@ import React from "react";
 import NavBar from "../../components/NavBar";
 import FAQsContainer from "../../components/FAQsContainer";
 import Banner from "@/components/Banner";
+import MobileNavBar from "@/components/MobileNavBar";
 
 const page = () => {
   const FAQs = [
@@ -46,11 +47,23 @@ const page = () => {
   ];
   return (
     <div className="flex flex-col">
-      <NavBar />
+      {/* nav bar */}
+      <div className="sticky top-0">
+        {/* For screens md: and above */}
+        <div className="hidden md:block">
+          <NavBar />
+        </div>
+
+        {/* For screens smaller than md: */}
+        <div className="block md:hidden">
+          <MobileNavBar />
+        </div>
+      </div>
+
       <div className="bg-zinc-50 w-full flex">
-        <div className="mx-24 w-full h-full flex flex-col items-start pt-24 gap-24">
+        <div className="mx-5 md:mx-24 w-full h-full flex flex-col items-start pt-24 gap-24">
           <div className="flex flex-col w-full items-center mb-16">
-            <p className="font-satoshi font-bold text-8xl text-darkGreen mb-16">
+            <p className="font-satoshi font-bold text-4xl md:text-8xl text-darkGreen mb-16">
               FAQs
             </p>
 

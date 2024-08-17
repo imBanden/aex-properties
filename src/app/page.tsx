@@ -11,6 +11,7 @@ import InputBox from "../components/InputBox";
 import NavBar from "../components/NavBar";
 import Banner from "../components/Banner";
 import MobileNavBar from "@/components/MobileNavBar";
+import MaterialSymbolsArrowForward from "@/icons/MaterialSymbolsArrowForward";
 
 export default function Home() {
   return (
@@ -71,7 +72,7 @@ export default function Home() {
                 Fill in the online form
               </p>
             </div>
-            <MaterialSymbolsArrowDownward className="text-darkGreen h-8 w-8 md:h-16 md:w-16 -rotate-90 -z-0" />
+            <MaterialSymbolsArrowForward className="text-darkGreen h-8 w-8 md:h-16 md:w-16" />
 
             <div className="flex flex-col gap-3 md:gap-6 items-center flex-[3_1_0%]">
               <div className="bg-lightGreen rounded-full flex justify-center items-center w-fit p-4">
@@ -82,7 +83,7 @@ export default function Home() {
               </p>
             </div>
 
-            <MaterialSymbolsArrowDownward className="text-darkGreen h-8 w-8 md:h-16 md:w-16 -rotate-90" />
+            <MaterialSymbolsArrowForward className="text-darkGreen h-8 w-8 md:h-16 md:w-16" />
 
             <div className="flex flex-col gap-3 md:gap-6 items-center flex-[3_1_0%]">
               <div className="bg-lightGreen rounded-full flex justify-center items-center w-fit p-4">

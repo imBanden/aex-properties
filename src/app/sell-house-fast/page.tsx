@@ -4,6 +4,7 @@ import React from "react";
 import NavBar from "../../components/NavBar";
 import Banner from "@/components/Banner";
 import WordOptions from "@/components/WordOptions";
+import MobileNavBar from "@/components/MobileNavBar";
 
 const page = () => {
   const sellHouseData = [
@@ -54,14 +55,26 @@ const page = () => {
 
   return (
     <div className="flex flex-col">
-      <NavBar />
+      {/* Nav Bar */}
+      <div className="sticky top-0">
+        {/* For screens md: and above */}
+        <div className="hidden md:block">
+          <NavBar />
+        </div>
+
+        {/* For screens smaller than md: */}
+        <div className="block md:hidden">
+          <MobileNavBar />
+        </div>
+      </div>
+
       <div className="bg-zinc-50 w-full flex">
-        <div className="mx-24 w-full h-full flex flex-col items-start py-24 gap-24">
+        <div className="mx-5 md:mx-24 w-full h-full flex flex-col items-start py-24 gap-24">
           <div className="flex flex-col w-full items-center mb-16">
-            <p className="font-satoshi font-bold text-8xl text-logoGreen">
+            <p className="font-satoshi font-bold text-4xl md:text-8xl text-logoGreen text-center">
               Sell house fast
             </p>
-            <p className="text-3xl my-12 gap-6 font-satoshi font-bold text-darkGreen">
+            <p className="text-xl md:text-3xl my-12 gap-6 font-satoshi font-bold text-darkGreen text-center">
               Receive funds within a week.
             </p>
           </div>
@@ -70,9 +83,9 @@ const page = () => {
       <Banner />
       {/* Guide */}
       <div className="bg-zinc-50 w-full flex">
-        <div className="mx-24 w-full h-full flex flex-col items-start py-24 gap-24">
+        <div className="mx-5 md:mx-24 w-full h-full flex flex-col items-start py-24 gap-24">
           <div className="flex flex-col w-full items-center">
-            <p className="font-satoshi font-bold text-6xl text-logoGreen">
+            <p className="font-satoshi font-bold text-2xl md:text-6xl text-logoGreen">
               What To Consider Before You Sell Your House
             </p>
           </div>
@@ -81,11 +94,12 @@ const page = () => {
         </div>
       </div>
       <Banner />
+
       {/* document needed */}
-      <div className="bg-zinc-50 w-full flex h-[80vh] py-24">
-        <div className="mx-24 w-full h-full flex flex-col items-start py-24 gap-24">
+      <div className="bg-zinc-50 w-full flex md:h-[80vh] py-24">
+        <div className="mx-5 md:mx-24 w-full h-full flex flex-col items-start py-24 gap-24">
           <div className="flex flex-col w-full items-center">
-            <p className="font-satoshi font-bold text-6xl text-logoGreen">
+            <p className="font-satoshi font-bold text-2xl md:text-6xl text-logoGreen">
               Documents You Need for Your House Sale
             </p>
           </div>

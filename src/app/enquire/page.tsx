@@ -3,6 +3,7 @@
 import NavBar from "@/components/NavBar";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
+import MobileNavBar from "@/components/MobileNavBar";
 
 interface FormData {
   date: string;
@@ -98,14 +99,24 @@ const EnquirePage = () => {
   console.log(data);
   return (
     <div className="flex flex-col">
-      {/* navbar */}
-      <NavBar />
+      {/* nav bar */}
+      <div className="sticky top-0">
+        {/* For screens md: and above */}
+        <div className="hidden md:block">
+          <NavBar />
+        </div>
+
+        {/* For screens smaller than md: */}
+        <div className="block md:hidden">
+          <MobileNavBar />
+        </div>
+      </div>
 
       {/* title */}
       <div className="bg-zinc-50 w-full flex">
-        <div className="mx-24 w-full h-full flex flex-col items-start pt-24 gap-24">
+        <div className="mx-5 md:mx-24 w-full h-full flex flex-col items-start pt-24 gap-24">
           <div className="flex flex-col w-full items-center mb-16">
-            <p className="font-satoshi font-bold text-8xl text-darkGreen mb-16">
+            <p className="font-satoshi font-bold text-4xl md:text-8xl text-darkGreen mb-16">
               Enquire
             </p>
           </div>
@@ -115,11 +126,11 @@ const EnquirePage = () => {
       {/* form */}
 
       <div className="bg-zinc-50 w-full flex">
-        <div className="mx-24 w-full h-full flex flex-col items-start py-24 gap-24">
+        <div className="mx-5 md:mx-24 w-full h-full flex flex-col items-center py-8 md:py-24 gap-24">
           <form
             style={{ maxWidth: 500, margin: "auto" }}
             onSubmit={handleSubmit}
-            className=""
+            className="flex flex-col gap-4 md:gap-0"
           >
             <div className="mb-3 flex flex-col gap-2">
               <label className="font-satoshi font-bold text-lg">Title *</label>

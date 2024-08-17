@@ -19,7 +19,7 @@ const MobileNavBar = () => {
   ];
 
   return (
-    <div className="bg-zinc-50 p-4 sticky top-0 z-20 flex justify-between items-center">
+    <div className="bg-zinc-50 p-4 sticky top-0 z-50 flex justify-between items-center">
       <div className="cursor-pointer" onClick={() => router.push("/")}>
         <Image
           priority={true}
@@ -38,7 +38,7 @@ const MobileNavBar = () => {
           {navBar.map((item, index) => (
             <div
               key={index}
-              className="p-4 border-b cursor-pointer hover:bg-gray-100"
+              className="p-4 border-b cursor-pointer hover:bg-gray-100 text-darkGreen font-satoshi font-bold"
               onClick={() => {
                 router.push(item.url);
                 toggleMenu(); // Close the menu after clicking
