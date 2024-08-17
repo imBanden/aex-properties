@@ -9,3 +9,12 @@
   font-display: swap;
   font-style: normal;
 }
+
+@layer components {
+  .footer-heads {
+    @apply text-lg md:text-3xl;
+  }
+  .footer-content {
+    @apply text-sm md:text-base;
+  }
+}

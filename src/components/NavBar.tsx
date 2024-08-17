@@ -41,7 +41,7 @@ const NavBar = () => {
           width={300}
           height={100}
           src={"/images/AEX PROPERTIES/fulllogo_transparent_nobuffer.png"}
-          className="object-contain cursor-pointer w-auto h-auto"
+          className="object-contain cursor-pointer w-300 h-100"
           onClick={() => router.push("/")}
         />
         <div className="flex items-center gap-3">

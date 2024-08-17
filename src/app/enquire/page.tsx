@@ -47,6 +47,7 @@ const EnquirePage = () => {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
+    setIsLoading(true);
     try {
       const res = await fetch(
         "https://script.google.com/macros/s/AKfycbzCESHdPhkaxaRA7giDqicg-zRPe3oELvnZNdBLMEPBR61BfNU4U6Y-H3QKQAe048Q/exec",
@@ -129,6 +130,7 @@ const EnquirePage = () => {
                 name="title"
                 value={data.title}
                 onChange={handleChange}
+                required
               />
             </div>
 
@@ -143,6 +145,7 @@ const EnquirePage = () => {
                 name="firstName"
                 value={data.firstName}
                 onChange={handleChange}
+                required
               />
             </div>
 
@@ -157,6 +160,7 @@ const EnquirePage = () => {
                 name="lastName"
                 value={data.lastName}
                 onChange={handleChange}
+                required
               />
             </div>
 
@@ -171,6 +175,7 @@ const EnquirePage = () => {
                 name="address"
                 value={data.address}
                 onChange={handleChange}
+                required
               />
             </div>
 
@@ -185,6 +190,7 @@ const EnquirePage = () => {
                 placeholder="e.g. 3 beds, 2 Toilets, 1 Living Room, Garage etc."
                 value={data.propertyDescriptions}
                 onChange={handleChange}
+                required
               />
             </div>
 
@@ -197,6 +203,7 @@ const EnquirePage = () => {
                 name="phone"
                 value={data.phone}
                 onChange={handleChange}
+                required
               />
             </div>
 
@@ -209,6 +216,7 @@ const EnquirePage = () => {
                 name="email"
                 value={data.email}
                 onChange={handleChange}
+                required
               />
             </div>
 
@@ -221,6 +229,7 @@ const EnquirePage = () => {
                 name="reasonForSelling"
                 value={data.reasonForSelling}
                 onChange={handleChange}
+                required
               >
                 <option value="">Select a reason</option>
                 <option value="buyer_withdrawn">Buyer has withdrawn</option>
@@ -249,6 +258,7 @@ const EnquirePage = () => {
                 name="timeframeToSell"
                 value={data.timeframeToSell}
                 onChange={handleChange}
+                required
               >
                 <option value="">Select a timeframe</option>
                 <option value="1_to_2_weeks">1 to 2 weeks</option>
@@ -271,6 +281,7 @@ const EnquirePage = () => {
                 name="purchaseTime"
                 value={data.purchaseTime}
                 onChange={handleChange}
+                required
               >
                 <option value="">Select a time period</option>
                 <option value="less_than_5_years">Less than 5 years</option>
@@ -293,6 +304,7 @@ const EnquirePage = () => {
                 name="propertyWorthAndMortgage"
                 value={data.propertyWorthAndMortgage}
                 onChange={handleChange}
+                required
               />
             </div>
 
@@ -303,6 +315,7 @@ const EnquirePage = () => {
                 checked={data.agreeToTerms}
                 onChange={handleChange}
                 className="cursor-pointer"
+                required
               />
               <label className="font-satoshi text-sm">
                 I agree to{" "}
@@ -316,7 +329,7 @@ const EnquirePage = () => {
 
             <button
               className="bg-logoGreen text-zinc-50 w-full font-bold rounded-xl px-6 py-3 text-lg hover:bg-green-900 transition-all h-fit flex justify-center"
-              onClick={() => setIsLoading(true)}
+              //   onClick={() => setIsLoading(true)}
             >
               {isLoading ? (
                 <div className="rounded-full w-7 h-7 border-2 border-zinc-400 border-t-zinc-50 animate-spin" />

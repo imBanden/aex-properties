@@ -61,9 +61,9 @@ export default function RootLayout({
           {/* footer */}
           <footer className="flex justify-center items-center bg-lightGreen pb-12">
             <div className="mx-24 w-full h-full flex flex-col items-start pt-24 gap-24">
-              <div className="flex gap-12 w-full">
+              <div className="flex gap-12 w-full flex-wrap">
                 <div className="flex flex-1  flex-col text-darkGreen px-8 gap-6">
-                  <p className="font-satoshi font-bold text-3xl">Socials</p>
+                  <p className="font-satoshi font-bold footer-heads">Socials</p>
                   <div className="flex flex-col gap-8 w-fit">
                     <div className="flex items-center text-base text-darkGreen gap-4">
                       <MaterialSymbolsCall className="text-3xl" />
@@ -75,8 +75,11 @@ export default function RootLayout({
                     </div>
                     <div className="flex items-center text-base text-darkGreen gap-4">
                       <MaterialSymbolsMail className="text-3xl" />
-                      <a target="_blank" href="mailto:amritasmile@gmail.com">
-                        <p className="hover:font-bold transition-all cursor-pointer">
+                      <a
+                        target="_blank"
+                        href="mailto:amritasmile@gmail.com footer-content"
+                      >
+                        <p className="hover:font-bold transition-all cursor-pointer footer-content">
                           amritasmile@gmail.com
                         </p>
                       </a>
@@ -104,11 +107,13 @@ export default function RootLayout({
                 </div>
 
                 <div className="flex flex-1  flex-col text-darkGreen px-8 gap-6">
-                  <p className="font-satoshi font-bold text-3xl">Sell House</p>
+                  <p className="font-satoshi font-bold footer-heads">
+                    Sell House
+                  </p>
                   <div className="flex flex-col gap-3 w-full">
                     {sellHouseFooter.map((items, index) => (
                       <div
-                        className="cursor-pointer text-darkGreen hover:font-bold transition-all text-base"
+                        className="cursor-pointer text-darkGreen hover:font-bold transition-all footer-content"
                         key={index}
                       >
                         {items}
@@ -118,11 +123,11 @@ export default function RootLayout({
                 </div>
 
                 <div className="flex flex-1  flex-col text-darkGreen px-8 gap-6">
-                  <p className="font-satoshi font-bold text-3xl">General</p>
+                  <p className="font-satoshi font-bold footer-heads">General</p>
                   <div className="flex flex-col gap-3 w-full">
                     {generalFooter.map((items, index) => (
                       <div
-                        className="cursor-pointer font text-darkGreen hover:font-bold transition-all text-base"
+                        className="cursor-pointer font text-darkGreen hover:font-bold transition-all footer-content"
                         key={index}
                       >
                         {items}
@@ -132,11 +137,11 @@ export default function RootLayout({
                 </div>
 
                 <div className="flex flex-1  flex-col text-darkGreen px-8 gap-6">
-                  <p className="font-satoshi font-bold text-3xl">Offers</p>
+                  <p className="font-satoshi font-bold footer-heads">Offers</p>
                   <div className="flex flex-col gap-3 w-full">
                     {offersFooter.map((items, index) => (
                       <div
-                        className="cursor-pointer font text-darkGreen hover:font-bold transition-all text-base"
+                        className="cursor-pointer font text-darkGreen hover:font-bold transition-all footer-content"
                         key={index}
                       >
                         {items}
@@ -146,7 +151,7 @@ export default function RootLayout({
                 </div>
               </div>
 
-              <div className="flex flex-col text-darkGreen text-sm">
+              <div className="flex flex-col text-darkGreen text-[10px] md:text-sm">
                 <p>Registered company name: AEX PROPERTIES LIMITED</p>
                 <p>Registered company number: 15897278</p>
                 <p>
