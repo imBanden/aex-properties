@@ -16,6 +16,18 @@ import MaterialSymbolsArrowForward from "@/icons/MaterialSymbolsArrowForward";
 export default function Home() {
   return (
     <div className="flex flex-col relative">
+      {/* nav bar */}
+      <div className="sticky top-0">
+        {/* For screens md: and above */}
+        <div className="hidden md:block">
+          <NavBar />
+        </div>
+
+        {/* For screens smaller than md: */}
+        <div className="block md:hidden">
+          <MobileNavBar />
+        </div>
+      </div>
       {/* // hero section */}
       <div className="flex justify-center items-center h-screen bg-lightGreen">
         <div className="flex flex-col gap-6 justify-center items-center">
@@ -29,19 +41,6 @@ export default function Home() {
             <InputBox placeholder="Enter your postcode..."></InputBox>
             <PrimaryButton>Sell now</PrimaryButton>
           </div>
-        </div>
-      </div>
-
-      {/* nav bar */}
-      <div className="sticky top-0">
-        {/* For screens md: and above */}
-        <div className="hidden md:block">
-          <NavBar />
-        </div>
-
-        {/* For screens smaller than md: */}
-        <div className="block md:hidden">
-          <MobileNavBar />
         </div>
       </div>
 
@@ -105,8 +104,8 @@ export default function Home() {
             <Image
               priority={true}
               alt="New Couple Moving in new house image"
-              width={200}
-              height={200}
+              width={2000}
+              height={2000}
               src={"/images/couple-moving-in-new-house.webp"}
               className="object-cover w-[250px] h-[200px] max-w-[250px] md:max-w-[500px] md:w-[500px] md:h-[500px] flex flex-1 rounded-2xl"
             />

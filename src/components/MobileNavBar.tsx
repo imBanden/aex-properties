@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import MaterialSymbolsMenu from "@/icons/MaterialSymbolsMenu";
+import MaterialSymbolsMail from "@/icons/MaterialSymbolsMail";
+import MaterialSymbolsCall from "@/icons/MaterialSymbolsCall";
 
 const MobileNavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,6 +31,28 @@ const MobileNavBar = () => {
           src={"/images/AEX PROPERTIES/fulllogo_transparent_nobuffer.png"}
           className="object-contain"
         />
+      </div>
+      <div className="flex flex-col justify-center text-logoGreen font-satoshi font-bold items-center">
+        <p className="text-[12px]">Contact us</p>
+        <div className="flex flex-col">
+          <div className="flex items-center text-[10px] gap-2">
+            <MaterialSymbolsCall className="text-base" />
+            <a target="_blank" href="tel:07375297745">
+              <p className=" transition-all cursor-pointer">07375297745</p>
+            </a>
+          </div>
+          <div className="flex items-center text-[10px] gap-2">
+            <MaterialSymbolsMail className="text-base" />
+            <a
+              target="_blank"
+              href="mailto:amritasmile@gmail.com footer-content"
+            >
+              <p className="transition-all cursor-pointer">
+                amritasmile@gmail.com
+              </p>
+            </a>
+          </div>
+        </div>
       </div>
       <MaterialSymbolsMenu onClick={toggleMenu} />
 

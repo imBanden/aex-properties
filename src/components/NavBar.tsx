@@ -6,6 +6,8 @@ import { useRouter } from "next/navigation";
 import InputBox from "./InputBox";
 import NavButtons from "./NavButtons";
 import PrimaryButton from "./PrimaryButton";
+import MaterialSymbolsMail from "@/icons/MaterialSymbolsMail";
+import MaterialSymbolsCall from "@/icons/MaterialSymbolsCall";
 
 interface navItem {
   title: string;
@@ -44,12 +46,36 @@ const NavBar = () => {
           className="object-contain cursor-pointer w-300 h-100"
           onClick={() => router.push("/")}
         />
+
         <div className="flex items-center gap-3">
           {navBar.map((item, index) => (
             <NavButtons key={index} handleClick={() => router.push(item.url)}>
               {item.title}
             </NavButtons>
           ))}
+        </div>
+      </div>
+
+      <div className="flex flex-col justify-center text-logoGreen font-satoshi font-bold items-center">
+        <p className="">Contact us</p>
+        <div className="flex flex-col">
+          <div className="flex items-center text-sm gap-4">
+            <MaterialSymbolsCall className="text-xl" />
+            <a target="_blank" href="tel:07375297745">
+              <p className=" transition-all cursor-pointer">07375297745</p>
+            </a>
+          </div>
+          <div className="flex items-center text-sm gap-4">
+            <MaterialSymbolsMail className="text-xl" />
+            <a
+              target="_blank"
+              href="mailto:amritasmile@gmail.com footer-content"
+            >
+              <p className="transition-all cursor-pointer">
+                amritasmile@gmail.com
+              </p>
+            </a>
+          </div>
         </div>
       </div>
       <div className="flex gap-8">
