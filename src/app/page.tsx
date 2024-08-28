@@ -123,8 +123,8 @@ export default function Home() {
       </div>
 
       {/* explore options */}
-      <div className="flex justify-center items-center md:h-screen bg-zinc-100 pb-12 md:pb-0">
-        <div className="mx-5 md:mx-24 w-full h-full flex flex-col items-center justify-center pt-24 gap-32 px-12">
+      <div className="flex justify-center items-center bg-zinc-100 pb-12 md:pb-8">
+        <div className="mx-5 md:mx-24 w-full h-full flex flex-col items-center justify-center pt-24 gap-32 px-4 md:px-12">
           <div className="flex flex-col gap-8">
             <p className="font-satoshi font-bold text-4xl md:text-8xl text-logoGreen">
               Explore your options
@@ -144,7 +144,17 @@ export default function Home() {
           </div>
 
           <div className="flex w-full gap-12 flex-wrap">
-            <div className="flex flex-1 flex-col gap-6 p-4 rounded-xl bg-zinc-50 shadow-[2px_4px_12px_rgba(0,0,0,0.08)] hover:shadow-[2px_4px_16px_rgba(0,0,0,0.16)] hover:scale-[1.01] transition-all duration-500">
+            <div className="flex md:flex-1 flex-col gap-6 p-4 rounded-xl bg-zinc-50 shadow-[2px_4px_12px_rgba(0,0,0,0.08)] hover:shadow-[2px_4px_16px_rgba(0,0,0,0.16)] hover:scale-[1.01] transition-all duration-500">
+              <p className="font-satoshi text-darkGreen font-bold text-3xl">
+                Need to Sell Your House Fast?
+              </p>
+              <p className="text-darkGreen text-sm">
+                We can help on - Stop Reposession, Financial Diffuculties,
+                Broken Chain, Relocation, Divorce and Probate.
+              </p>
+            </div>
+
+            {/* <div className="flex md:flex-1 flex-col gap-6 p-4 rounded-xl bg-zinc-50 shadow-[2px_4px_12px_rgba(0,0,0,0.08)] hover:shadow-[2px_4px_16px_rgba(0,0,0,0.16)] hover:scale-[1.01] transition-all duration-500">
               <p className="font-satoshi text-darkGreen font-bold text-3xl">
                 Sell House Fast
               </p>
@@ -153,9 +163,8 @@ export default function Home() {
                 and effective solution for people looking to sell their house
                 quickly.
               </p>
-              <NavButtons>Learn more</NavButtons>
-            </div>
-            <div className="flex flex-1 flex-col gap-6 p-4 rounded-xl bg-zinc-50 shadow-[2px_4px_12px_rgba(0,0,0,0.08)] hover:shadow-[2px_4px_16px_rgba(0,0,0,0.16)] hover:scale-[1.01] transition-all duration-500">
+            </div> */}
+            {/* <div className="flex md:flex-1 flex-col gap-6 p-4 rounded-xl bg-zinc-50 shadow-[2px_4px_12px_rgba(0,0,0,0.08)] hover:shadow-[2px_4px_16px_rgba(0,0,0,0.16)] hover:scale-[1.01] transition-all duration-500">
               <p className="font-satoshi text-darkGreen font-bold text-3xl">
                 Cash House Buyers
               </p>
@@ -165,9 +174,31 @@ export default function Home() {
                 for your property, and we&apos;ll take care of all of the
                 paperwork and closing costs.
               </p>
-              <NavButtons>Learn more</NavButtons>
+            </div> */}
+            <div className="flex md:flex-1 flex-col gap-6 p-4 rounded-xl bg-zinc-50 shadow-[2px_4px_12px_rgba(0,0,0,0.08)] hover:shadow-[2px_4px_16px_rgba(0,0,0,0.16)] hover:scale-[1.01] transition-all duration-500">
+              <p className="font-satoshi text-darkGreen font-bold text-3xl">
+                Why to sell fast?
+              </p>
+              <p className="text-darkGreen text-sm">
+                To stop repossession - Reach out to us immediately to explore
+                options that can help you prevent, delay, or completely avoid
+                the stress of repossession.<br></br>
+                <br></br>
+                To solve financial difficulties - Consider selling your home
+                quickly for cash to alleviate debt and regain financial
+                stability within a short period.<br></br>
+                <br></br>
+                Make A Relocate Easy - Relocating for a job can be a smart
+                career move, offering better opportunities and a chance to live
+                closer to your family.<br></br>
+                <br></br>
+                Downsizing - If you're seeking a simpler lifestyle or want to be
+                closer to loved ones, downsizing can be a practical and
+                rewarding choice.
+                <br></br>
+              </p>
             </div>
-            <div className="flex flex-1 flex-col gap-6 p-4 rounded-xl bg-zinc-50 shadow-[2px_4px_12px_rgba(0,0,0,0.08)] hover:shadow-[2px_4px_16px_rgba(0,0,0,0.16)] hover:scale-[1.01] transition-all duration-500">
+            {/* <div className="flex md:flex-1 flex-col gap-6 p-4 rounded-xl bg-zinc-50 shadow-[2px_4px_12px_rgba(0,0,0,0.08)] hover:shadow-[2px_4px_16px_rgba(0,0,0,0.16)] hover:scale-[1.01] transition-all duration-500">
               <p className="font-satoshi text-darkGreen font-bold text-3xl">
                 Sell Flat Fast
               </p>
@@ -177,9 +208,22 @@ export default function Home() {
                 we&apos;re prepared to get you the best price for your property,
                 fast.
               </p>
-              <NavButtons>Learn more</NavButtons>
+            </div> */}
+            <div className="flex md:flex-1 flex-col gap-6 p-4 rounded-xl bg-zinc-50 shadow-[2px_4px_12px_rgba(0,0,0,0.08)] hover:shadow-[2px_4px_16px_rgba(0,0,0,0.16)] hover:scale-[1.01] transition-all duration-500">
+              <p className="font-satoshi text-darkGreen font-bold text-3xl">
+                Us compared to Estate Agents
+              </p>
+              <p className="text-darkGreen text-sm">
+                We guarantee firm offer within 24 hours. <br></br>
+                <br></br>We guarantee quick completion.<br></br>
+                <br></br> No fees at all when you are selling to us We buy
+                houses in any condition.<br></br>
+                <br></br> No selling chain at all Hassle free with no
+                renovations, fully confidential, and no Estate agent 'For Sale'
+                boards.
+              </p>
             </div>
-            <div className="flex flex-1 flex-col gap-6 p-4 rounded-xl bg-zinc-50 shadow-[2px_4px_12px_rgba(0,0,0,0.08)] hover:shadow-[2px_4px_16px_rgba(0,0,0,0.16)] hover:scale-[1.01] transition-all duration-500">
+            <div className="flex md:flex-1 flex-col gap-6 p-4 rounded-xl bg-zinc-50 shadow-[2px_4px_12px_rgba(0,0,0,0.08)] hover:shadow-[2px_4px_16px_rgba(0,0,0,0.16)] hover:scale-[1.01] transition-all duration-500">
               <p className="font-satoshi text-darkGreen font-bold text-3xl">
                 Sell With Tenants
               </p>
@@ -189,7 +233,6 @@ export default function Home() {
                 and ensure that everyone is taken care of throughout the
                 process.
               </p>
-              <NavButtons>Learn more</NavButtons>
             </div>
           </div>
         </div>
