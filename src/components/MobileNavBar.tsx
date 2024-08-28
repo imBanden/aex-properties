@@ -45,10 +45,10 @@ const MobileNavBar = () => {
             <MaterialSymbolsMail className="text-base" />
             <a
               target="_blank"
-              href="mailto:amritasmile@gmail.com footer-content"
+              href="mailto:info@aexproperties.co.uk footer-content"
             >
               <p className="transition-all cursor-pointer">
-                amritasmile@gmail.com
+                info@aexproperties.co.uk
               </p>
             </a>
           </div>

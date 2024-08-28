@@ -56,7 +56,7 @@ const NavBar = () => {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center text-logoGreen font-satoshi font-bold items-center">
+      {/* <div className="flex flex-col justify-center text-logoGreen font-satoshi font-bold items-center">
         <p className="">Contact us</p>
         <div className="flex flex-col">
           <div className="flex items-center text-sm gap-4">
@@ -69,10 +69,10 @@ const NavBar = () => {
             <MaterialSymbolsMail className="text-xl" />
             <a
               target="_blank"
-              href="mailto:amritasmile@gmail.com footer-content"
+              href="mailto:info@aexproperties.co.uk footer-content"
             >
               <p className="transition-all cursor-pointer">
-                amritasmile@gmail.com
+                info@aexproperties.co.uk
               </p>
             </a>
           </div>
@@ -81,6 +81,29 @@ const NavBar = () => {
       <div className="flex gap-8">
         <InputBox placeholder="Enter your postcode..."></InputBox>
         <PrimaryButton>Sell now</PrimaryButton>
+      </div> */}
+
+      <div className="flex justify-center text-logoGreen font-satoshi font-bold items-center gap-8">
+        <p className="text-lg">Contact us</p>
+        <div className="flex flex-col gap-2">
+          <div className="flex items-center text-sm gap-4">
+            <MaterialSymbolsCall className="text-xl" />
+            <a target="_blank" href="tel:07375297745">
+              <p className=" transition-all cursor-pointer">07375297745</p>
+            </a>
+          </div>
+          <div className="flex items-center text-sm gap-4">
+            <MaterialSymbolsMail className="text-xl" />
+            <a
+              target="_blank"
+              href="mailto:info@aexproperties.co.uk footer-content"
+            >
+              <p className="transition-all cursor-pointer">
+                info@aexproperties.co.uk
+              </p>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
