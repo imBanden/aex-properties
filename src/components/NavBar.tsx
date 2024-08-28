@@ -84,12 +84,14 @@ const NavBar = () => {
       </div> */}
 
       <div className="flex justify-center text-logoGreen font-satoshi font-bold items-center gap-8">
-        <p className="text-lg">Contact us</p>
+        <p className="text-xl">Contact us</p>
         <div className="flex flex-col gap-2">
           <div className="flex items-center text-sm gap-4">
             <MaterialSymbolsCall className="text-xl" />
             <a target="_blank" href="tel:07375297745">
-              <p className=" transition-all cursor-pointer">07375297745</p>
+              <p className=" transition-all cursor-pointer text-lg">
+                07375297745
+              </p>
             </a>
           </div>
           <div className="flex items-center text-sm gap-4">
@@ -98,7 +100,7 @@ const NavBar = () => {
               target="_blank"
               href="mailto:info@aexproperties.co.uk footer-content"
             >
-              <p className="transition-all cursor-pointer">
+              <p className="transition-all cursor-pointer text-lg">
                 info@aexproperties.co.uk
               </p>
             </a>

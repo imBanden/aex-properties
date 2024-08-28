@@ -146,7 +146,7 @@ const Footer = () => {
             <div className="flex flex-col gap-3 w-full">
               {footer.map((item, index) => (
                 <div
-                  className="cursor-pointer font text-darkGreen hover:font-bold transition-all footer-content"
+                  className="cursor-pointer font text-darkGreen hover:font-bold transition-all footer-content select-none"
                   key={index}
                   onClick={() => router.push(item.link)}
                 >
