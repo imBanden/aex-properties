@@ -114,7 +114,7 @@ const page = () => {
               width={500}
               height={500}
               src={"/images/AEX PROPERTIES/icononly_transparent_nobuffer.png"}
-              className="object-cover max-w-[100px] w-[100px] h-[100px] md:max-w-[150px] md:w-[150px] md:h-[150px] flex flex-1 rounded-2xl"
+              className="object-cover max-w-[100px] w-[100px] h-[100px] md:max-w-[150px] md:w-[150px] md:h-[150px] flex flex-1"
             />
             <p className="font-satoshi font-bold text-4xl md:text-8xl text-darkGreen mb-16 text-center">
               The{" "}
