@@ -192,8 +192,8 @@ export default function Home() {
                 career move, offering better opportunities and a chance to live
                 closer to your family.<br></br>
                 <br></br>
-                Downsizing - If you're seeking a simpler lifestyle or want to be
-                closer to loved ones, downsizing can be a practical and
+                Downsizing - If you&apos;re seeking a simpler lifestyle or want
+                to be closer to loved ones, downsizing can be a practical and
                 rewarding choice.
                 <br></br>
               </p>
@@ -219,8 +219,8 @@ export default function Home() {
                 <br></br> No fees at all when you are selling to us We buy
                 houses in any condition.<br></br>
                 <br></br> No selling chain at all Hassle free with no
-                renovations, fully confidential, and no Estate agent 'For Sale'
-                boards.
+                renovations, fully confidential, and no Estate agent &apos;For
+                Sale&apos; boards.
               </p>
             </div>
             <div className="flex md:flex-1 flex-col gap-6 p-4 rounded-xl bg-zinc-50 shadow-[2px_4px_12px_rgba(0,0,0,0.08)] hover:shadow-[2px_4px_16px_rgba(0,0,0,0.16)] hover:scale-[1.01] transition-all duration-500">
