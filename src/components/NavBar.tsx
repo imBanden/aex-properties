@@ -35,7 +35,7 @@ const NavBar = () => {
     },
   ];
   return (
-    <div className="flex justify-between bg-zinc-50 p-8 sticky top-0 z-20">
+    <div className="flex justify-between bg-zinc-50 p-8 sticky top-0 z-50">
       <div className="flex gap-16 items-center">
         <Image
           priority={true}

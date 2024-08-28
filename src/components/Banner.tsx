@@ -5,7 +5,7 @@ import PrimaryButton from "./PrimaryButton";
 
 const Banner = () => {
   return (
-    <div className="flex bg-darkGreen w-full z-10">
+    <div className="flex bg-darkGreen w-full">
       <div className="mx-0 md:mx-24 w-full h-full flex items-center justify-center md:justify-between p-4 md:p-8 flex-wrap gap-4">
         <div className="flex gap-4 md:gap-8 items-center">
           <MaterialSymbolsInHomeMode className="text-lightGreen h-12 w-12" />
